@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d39dfd78-5bb0-4d65-b4d8-667101661527" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/JsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entrada/filme-maior.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entrada/filme.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/GeradoraDeFigurinhas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +39,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Gabriel Alves/OneDrive/Documentos/Projects/imersao-java-alura/alura-stickers/entrada"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\imersao-java-alura\alura-stickers\entrada" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="GeradoraDeFigurinhas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.gabrieldragone.GeradoraDeFigurinhas" />
+      <module name="alura-stickers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.gabrieldragone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.gabrieldragone.Main" />
       <module name="alura-stickers" />
@@ -61,6 +78,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GeradoraDeFigurinhas" />
       </list>
     </recent_temporary>
   </component>
@@ -85,5 +103,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/gabrieldragone/GeradoraDeFigurinhas.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

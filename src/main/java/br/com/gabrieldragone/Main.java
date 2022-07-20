@@ -1,7 +1,8 @@
 package br.com.gabrieldragone;
 
-import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws Exception {
 
         // Fazer conexão HTTP (Protocoloco de comunicação na internet) e buscar os top 250 filmes:
         // String url = "https://imdb-api.com/en/API/Top250Movies/k_0ojt0yvm"; // Tá fora do ar
@@ -33,12 +34,28 @@ public class Main {
         //System.out.println(listaDeFilmes.get(0));
 
         // Exibir e manipular os dados:
+        // Para cada um dos filmes, gerar a figurinha:
         for (Map<String, String> filme: listaDeFilmes) {
+
             System.out.println("Posição: " + filme.get("rank")); // Na estrutura Map, quando queremos pegar algum valor, utilizamos o get(key).
             System.out.println("Título: " + filme.get("title"));
             System.out.println("Poster: " + filme.get("image"));
             System.out.println("Avaliação: " + filme.get("imDbRating"));
             System.out.println();
+
+            String urlImagem = filme.get("image");
+            InputStream inputStream = new URL(urlImagem).openStream();
+
+            String titulo = filme.get("title")
+                    .replaceAll(":", "")
+                    .replaceAll("\\.", "")
+                    .replaceAll("\\(", "")
+                    .replaceAll("\\)", "");
+            String nomeArquivo = titulo + ".jpg";
+
+            GeradoraDeFigurinhas gerador = new GeradoraDeFigurinhas();
+            gerador.criar(inputStream, nomeArquivo);
+
         }
 
     }
